@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Шаблон статьи</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#ECE9E2}
+a{color:#1A1D1A}a:hover{color:#56643F}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.read{max-width:720px;margin:0 auto;padding:0 24px}
+.dark{background:#1C221D;color:#ECE9E2}
+.eb{margin:0;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#56643F}
+.dark .eb{color:#B9BFB3}
+.serif{font-family:'Gilroy','Manrope',sans-serif}
+.muted{color:#4F564F}
+.dark .muted{color:#B9BFB3}
+.btn{display:inline-block;background:#56643F;color:#fff;text-decoration:none;padding:16px 28px;font-weight:600;font-size:15px;border-radius:2px;border:0;font-family:'Gilroy','Manrope',sans-serif;cursor:pointer}
+.btn:hover{color:#fff;background:#46522F}
+.h2a{margin:48px 0 16px;font-family:'Gilroy','Manrope',sans-serif;font-weight:600;font-size:32px;line-height:1.2}
+.ph{background-color:#2F3830;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.03) 0 2px,transparent 2px 14px);color:#8F978B;font-size:13px;display:flex;align-items:center;justify-content:center}
+.ph-l{background-color:#D6D1C5;background-image:repeating-linear-gradient(135deg,rgba(0,0,0,.035) 0 2px,transparent 2px 14px)}
+details summary{cursor:pointer;list-style:none}
+details summary::-webkit-details-marker{display:none}
+</style>
+</head>
+<body>
+
+<div style="font-family: 'Gilroy', 'Manrope', sans-serif; color: #1A1D1A; font-size: 18px; line-height: 1.7;">
+
+<header class="dark" style="border-bottom: 1px solid #333B33;">
+<div class="wrap" style="padding-top: 18px; padding-bottom: 18px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;">
+<a href="01-glavnaya.html" style="color: #ECE9E2; text-decoration: none; display: flex; flex-direction: column; line-height: 1.2;"><span class="serif" style="font-size: 20px; font-weight: 600;">Школа Дзен Медитации</span><span style="font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: #B9BFB3;">Филиппа Егорова</span></a>
+<nav aria-label="Основное меню" style="display: flex; gap: 28px; flex-wrap: wrap; font-size: 15px;">
+<a href="02-vvodnyj-kurs.html" style="color: #ECE9E2; text-decoration: none;">Вводный курс</a>
+<a href="04-gruppa.html" style="color: #ECE9E2; text-decoration: none;">Практика</a>
+<a href="03-o-shkole.html" style="color: #ECE9E2; text-decoration: none;">О школе</a>
+<a href="06-otzyvy.html" style="color: #ECE9E2; text-decoration: none;">Отзывы</a>
+<a href="07-stati.html" style="color: #A9C08A; text-decoration: none;">Статьи</a>
+</nav>
+<a href="02-vvodnyj-kurs.html" class="btn" style="padding: 12px 22px;">Записаться</a>
+</div>
+</header>
+
+<article>
+<!-- 1 H1 + 2 Автор -->
+<div class="read" style="padding-top: 64px; display: flex; flex-direction: column; gap: 24px;">
+<nav aria-label="Хлебные крошки" class="muted" style="font-size: 14px;"><a href="07-stati.html" class="muted">Статьи</a> / С чего начать</nav>
+<h1 class="serif" style="margin: 0; font-weight: 600; font-size: 48px; line-height: 1.12;">Как научиться медитировать: пошагово для начинающих</h1>
+<div style="display: flex; gap: 14px; align-items: center; border-top: 1px solid #C9C4B8; border-bottom: 1px solid #C9C4B8; padding: 16px 0;">
+<div class="ph-l" style="width: 52px; height: 52px; border-radius: 50%; flex-shrink: 0;"></div>
+<div style="font-size: 14px; line-height: 1.4;"><div style="font-weight: 600;">Филипп Егоров</div><div class="muted">30+ лет практики, нейрофизиолог · обновлено [дата] · 7 мин</div></div>
+</div>
+<!-- 3 Короткий ответ -->
+<div style="background: #F4F2EC; padding: 24px 28px; border-top: 3px solid #56643F;"><strong>Коротко:</strong> [2–3 предложения — прямой ответ на запрос. Этот абзац Яндекс берёт в быстрый ответ.]</div>
+<!-- 4 Оглавление -->
+<nav aria-label="Содержание" style="display: flex; flex-direction: column; gap: 6px; font-size: 16px;">
+<span class="eb">Содержание</span>
+<a href="#s1">1. Что такое медитация на самом деле</a>
+<a href="#s2">2. Как сесть, чтобы не было больно</a>
+<a href="#s3">3. Первая практика на 10 минут</a>
+<a href="#s4">4. Почему одному сложно не бросить</a>
+<a href="#faq">Частые вопросы</a>
+</nav>
+</div>
+
+<div class="ph-l" style="max-width: 1000px; height: 420px; margin: 48px auto;"></div>
+
+<!-- 5 Текст -->
+<div class="read">
+<h2 id="s1" class="h2a">Что такое медитация на самом деле</h2>
+<p>[Текст статьи. Подзаголовки — вопросами, как их ищут в Яндексе. Научные факты, без мистики.]</p>
+<h2 id="s2" class="h2a">Как сесть, чтобы не было больно</h2>
+<p>[Текст.]</p>
+<!-- 6 Врезка видео -->
+<aside class="dark" style="display: grid; grid-template-columns: 160px 1fr; gap: 20px; align-items: center; padding: 20px; margin: 32px 0; font-size: 16px;">
+<div class="ph" style="height: 100px;">▶</div>
+<div style="display: flex; flex-direction: column; gap: 8px;"><strong>Удобнее с голосом?</strong><span class="muted">Видеоурок по этой технике — бесплатно.</span><a href="09-videouroki.html" style="color: #A9C08A; font-weight: 600;">Смотреть урок →</a></div>
+</aside>
+<h2 id="s3" class="h2a">Первая практика на 10 минут</h2>
+<p>[Пошаговое упражнение «попробуйте сейчас».]</p>
+<!-- 7 Пятно на рубашке -->
+<h2 id="s4" class="h2a">Почему одному сложно не бросить</h2>
+<p>[Честный абзац: по статье можно начать, но удержать практику без учителя и группы трудно. Что даёт живой учитель.]</p>
+</div>
+
+<!-- 8 Карточка курса -->
+<div class="read" style="margin-top: 48px;">
+<div style="border: 1px solid #1C221D; padding: 32px; display: flex; flex-direction: column; gap: 16px;">
+<span class="eb">Вводный курс</span>
+<span class="serif" style="font-size: 28px; line-height: 1.25;">Основы Покоя — 4 занятия с учителем</span>
+<span class="muted" style="font-size: 16px;">8 000 ₽ · старт 10 и 11 октября · м. Тимирязевская / Войковская</span>
+<div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;"><a href="02-vvodnyj-kurs.html" class="btn">Записаться</a><a href="09-videouroki.html" style="font-size: 15px;">Или начните с бесплатных уроков →</a></div>
+</div>
+</div>
+
+<!-- 10 FAQ -->
+<div id="faq" class="read" style="margin-top: 64px;">
+<h2 class="serif" style="margin: 0 0 16px; font-weight: 600; font-size: 32px;">Частые вопросы</h2>
+<div style="border-top: 1px solid #A9A396; font-size: 17px;">
+<details style="border-bottom: 1px solid #A9A396; padding: 18px 0;"><summary style="font-weight: 600; display: flex; justify-content: space-between;">[Вопрос по теме]<span aria-hidden="true">+</span></summary><p class="muted" style="margin: 8px 0 0;">[Короткий ответ]</p></details>
+<details style="border-bottom: 1px solid #A9A396; padding: 18px 0;"><summary style="font-weight: 600; display: flex; justify-content: space-between;">[Вопрос по теме]<span aria-hidden="true">+</span></summary><p class="muted" style="margin: 8px 0 0;">[Короткий ответ]</p></details>
+<details style="border-bottom: 1px solid #A9A396; padding: 18px 0;"><summary style="font-weight: 600; display: flex; justify-content: space-between;">[Вопрос по теме]<span aria-hidden="true">+</span></summary><p class="muted" style="margin: 8px 0 0;">[Короткий ответ]</p></details>
+</div>
+</div>
+</article>
+
+<!-- 9 Читайте также -->
+<section style="padding: 96px 0;">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 32px;">
+<h2 class="serif" style="margin: 0; font-weight: 600; font-size: 32px;">Читайте также</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
+<a href="08-statya-shablon.html" style="text-decoration: none; display: flex; flex-direction: column; gap: 12px;"><div class="ph-l" style="height: 190px;"></div><span class="serif" style="font-size: 21px; line-height: 1.3; color: #1A1D1A;">Как правильно сидеть во время медитации</span></a>
+<a href="08-statya-shablon.html" style="text-decoration: none; display: flex; flex-direction: column; gap: 12px;"><div class="ph-l" style="height: 190px;"></div><span class="serif" style="font-size: 21px; line-height: 1.3; color: #1A1D1A;">Почему бросают медитацию</span></a>
+<a href="08-statya-shablon.html" style="text-decoration: none; display: flex; flex-direction: column; gap: 12px;"><div class="ph-l" style="height: 190px;"></div><span class="serif" style="font-size: 21px; line-height: 1.3; color: #1A1D1A;">Медитация от стресса: что работает</span></a>
+</div>
+</div>
+</section>
+
+<footer style="background: #141915; color: #B9BFB3; padding: 48px 0; font-size: 14px;">
+<div class="wrap" style="display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap;"><span class="serif" style="color: #ECE9E2; font-size: 18px;">Школа Дзен Медитации</span><span>«Прана»: Тимирязевская · Войковская · [телефон] · Telegram</span><span>[реквизиты] · Политика · Оферта</span></div>
+</footer>
+
+</div>
+
+</body>
+</html>
