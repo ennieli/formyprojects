@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>FABBRO — одностраничник</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#E9E9E9}
+a{color:#1C1C1C}a:hover{color:#5E5E5E}
+.ph{background-color:#BDBDBD;background-image:none}
+.note{font-size:13px;color:#5E5E5E;font-style:italic}
+</style>
+</head>
+<body>
+
+<div style="font-family: 'LT Superior', 'Manrope', sans-serif; color: #1C1C1C; background: #E9E9E9; font-size: 17px; line-height: 1.6;">
+
+<!-- ШАПКА: якоря на блоки страницы -->
+<header style="background: #202020; color: #E9E9E9; border-bottom: 1px solid #393939;">
+<div style="padding: 18px clamp(20px, 5vw, 96px); display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;">
+<a href="#top" style="color: #E9E9E9; text-decoration: none; display: flex; flex-direction: column; line-height: 1.2;">
+<span style="font-size: 22px; font-weight: 700; letter-spacing: 0.08em;">FABBRO</span>
+<span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #BDBDBD;">Штамповка для ковки</span>
+</a>
+<nav aria-label="Меню" style="display: flex; gap: 24px; flex-wrap: wrap; font-size: 15px;">
+<a href="#catalog" style="color: #E9E9E9; text-decoration: none;">Каталог</a>
+<a href="#terms" style="color: #E9E9E9; text-decoration: none;">Опт и доставка</a>
+<a href="#factory" style="color: #E9E9E9; text-decoration: none;">Производство</a>
+<a href="#contacts" style="color: #E9E9E9; text-decoration: none;">Контакты</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 20px;">
+<div style="display: flex; flex-direction: column; align-items: flex-end; line-height: 1.3;">
+<a href="tel:+70000000000" style="color: #E9E9E9; text-decoration: none; font-weight: 600; font-size: 18px;">+7 [новый номер]</a>
+<span style="font-size: 13px; color: #BDBDBD;">WhatsApp · Telegram</span>
+</div>
+<a href="#" style="color: #E9E9E9; text-decoration: none; border: 1px solid #5E5E5E; padding: 10px 16px; font-size: 15px; white-space: nowrap;">Заказ · 0 ₽</a>
+</div>
+</div>
+</header>
+
+<!-- 1. ПЕРВЫЙ ЭКРАН + цифры -->
+<section id="top" style="background: #202020; color: #E9E9E9;">
+<div style="padding: 80px clamp(20px, 5vw, 96px) 64px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 56px; align-items: center;">
+<div>
+<p style="margin: 0 0 16px; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #BDBDBD;">Производитель · Новая Усмань, Воронежская обл.</p>
+<h1 style="margin: 0 0 24px; font-size: clamp(36px, 5vw, 60px); line-height: 1.1; font-weight: 700;">Штампованные элементы для ковки. Всё в наличии, цены открыты</h1>
+<p style="margin: 0 0 36px; font-size: 20px; color: #BDBDBD; max-width: 620px;">Для кузниц, производителей ворот и магазинов ковки. Отгружаем со склада по всей России, до терминала ТК — бесплатно.</p>
+<div style="display: flex; gap: 16px; flex-wrap: wrap;">
+<a href="#catalog" style="display: inline-block; background: #E9E9E9; color: #1C1C1C; padding: 16px 32px; font-weight: 600; text-decoration: none;">Каталог и цены</a>
+<a href="#" style="display: inline-block; border: 1px solid #E9E9E9; color: #E9E9E9; padding: 15px 31px; font-weight: 600; text-decoration: none;">Прайс .xlsx</a>
+</div>
+</div>
+<div class="ph" style="aspect-ratio: 4 / 3; display: flex; align-items: center; justify-content: center; color: #5E5E5E; font-size: 15px;">фото продукции</div>
+</div>
+<div style="padding: 32px clamp(20px, 5vw, 96px) 48px; border-top: 1px solid #393939; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr)); gap: 24px;">
+<div><p style="margin: 0; font-size: 32px; font-weight: 700; line-height: 1.1;">50 000+</p><p style="margin: 4px 0 0; color: #BDBDBD; font-size: 15px;">изделий в месяц</p></div>
+<div><p style="margin: 0; font-size: 32px; font-weight: 700; line-height: 1.1;">~50</p><p style="margin: 4px 0 0; color: #BDBDBD; font-size: 15px;">позиций, все на складе</p></div>
+<div><p style="margin: 0; font-size: 32px; font-weight: 700; line-height: 1.1;">7 500+</p><p style="margin: 4px 0 0; color: #BDBDBD; font-size: 15px;">отзывов на Ozon</p></div>
+<div><p style="margin: 0; font-size: 32px; font-weight: 700; line-height: 1.1;">до −15 %</p><p style="margin: 4px 0 0; color: #BDBDBD; font-size: 15px;">на крупный заказ</p></div>
+</div>
+</section>
+
+<!-- 2. КАТАЛОГ: Tilda Store, вкладки по категориям, 8 карточек + «показать ещё» -->
+<section id="catalog" style="padding: 96px 0;">
+<div style="padding: 0 clamp(20px, 5vw, 96px);">
+<h2 style="margin: 0 0 24px; font-size: clamp(30px, 3.5vw, 44px); line-height: 1.15;">Каталог</h2>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 32px; font-size: 15px;">
+<span style="background: #1C1C1C; color: #E9E9E9; padding: 8px 16px;">Все</span>
+<span style="border: 1px solid #1C1C1C; padding: 7px 15px;">Филёнка</span>
+<span style="border: 1px solid #1C1C1C; padding: 7px 15px;">Балясины</span>
+<span style="border: 1px solid #1C1C1C; padding: 7px 15px;">[Категория]</span>
+<span style="border: 1px solid #1C1C1C; padding: 7px 15px;">[Категория]</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 20px;">
+<div style="background: #FFFFFF; border: 1px solid #DADADA;"><div class="ph" style="aspect-ratio: 1 / 1;"></div><div style="padding: 16px;"><p style="margin: 0; font-weight: 600;">Филёнка «Классика» 490×490</p><p style="margin: 0 0 12px; font-size: 14px; color: #5E5E5E;">1,2 мм · в наличии</p><div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-size: 22px; font-weight: 700;">900 ₽</span><span style="background: #1C1C1C; color: #E9E9E9; padding: 10px 16px; font-weight: 600; font-size: 15px;">В заказ</span></div></div></div>
+<div style="background: #FFFFFF; border: 1px solid #DADADA;"><div class="ph" style="aspect-ratio: 1 / 1;"></div><div style="padding: 16px;"><p style="margin: 0; font-weight: 600;">Филёнка под заклёпку 490×790</p><p style="margin: 0 0 12px; font-size: 14px; color: #5E5E5E;">1,2 мм · в наличии</p><div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-size: 22px; font-weight: 700;">1 600 ₽</span><span style="background: #1C1C1C; color: #E9E9E9; padding: 10px 16px; font-weight: 600; font-size: 15px;">В заказ</span></div></div></div>
+<div style="background: #FFFFFF; border: 1px solid #DADADA;"><div class="ph" style="aspect-ratio: 1 / 1;"></div><div style="padding: 16px;"><p style="margin: 0; font-weight: 600;">Балясина «[модель]»</p><p style="margin: 0 0 12px; font-size: 14px; color: #5E5E5E;">[размер] · в наличии</p><div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-size: 22px; font-weight: 700;">[цена] ₽</span><span style="background: #1C1C1C; color: #E9E9E9; padding: 10px 16px; font-weight: 600; font-size: 15px;">В заказ</span></div></div></div>
+<div style="background: #FFFFFF; border: 1px solid #DADADA;"><div class="ph" style="aspect-ratio: 1 / 1;"></div><div style="padding: 16px;"><p style="margin: 0; font-weight: 600;">[Изделие] [размер]</p><p style="margin: 0 0 12px; font-size: 14px; color: #5E5E5E;">[толщина] мм · в наличии</p><div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-size: 22px; font-weight: 700;">[цена] ₽</span><span style="background: #1C1C1C; color: #E9E9E9; padding: 10px 16px; font-weight: 600; font-size: 15px;">В заказ</span></div></div></div>
+</div>
+<div style="text-align: center; margin-top: 32px;"><span style="display: inline-block; border: 1px solid #1C1C1C; padding: 13px 40px; font-weight: 600;">Показать ещё</span></div>
+<p class="note" style="margin: 16px 0 0;">Карточка товара открывается поп-апом Tilda: фото, размер, толщина, вес, количество. Отдельных страниц нет.</p>
+</div>
+</section>
+
+<!-- 3. ОПТ, ДОСТАВКА, ОПЛАТА — одним блоком -->
+<section id="terms" style="background: #DADADA; padding: 96px 0;">
+<div style="padding: 0 clamp(20px, 5vw, 96px);">
+<h2 style="margin: 0 0 40px; font-size: clamp(30px, 3.5vw, 44px); line-height: 1.15;">Опт, доставка, оплата</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr)); gap: 48px;">
+<div>
+<table style="width: 100%; border-collapse: collapse; background: #FFFFFF;">
+<thead><tr style="background: #1C1C1C; color: #E9E9E9; text-align: left;"><th style="padding: 12px 16px; font-weight: 600;">Сумма заказа</th><th style="padding: 12px 16px; font-weight: 600;">Скидка</th></tr></thead>
+<tbody>
+<tr style="border-bottom: 1px solid #DADADA;"><td style="padding: 12px 16px;">от 50 000 ₽</td><td style="padding: 12px 16px; font-weight: 700;">−5 %</td></tr>
+<tr style="border-bottom: 1px solid #DADADA;"><td style="padding: 12px 16px;">от 100 000 ₽</td><td style="padding: 12px 16px; font-weight: 700;">−10 %</td></tr>
+<tr><td style="padding: 12px 16px;">от 200 000 ₽</td><td style="padding: 12px 16px; font-weight: 700;">−15 %</td></tr>
+</tbody>
+</table>
+<p style="margin: 20px 0 0;"><b>Магазинам ковки:</b> прайс в Excel и фото изделий на белом фоне для вашего каталога. <a href="#" style="font-weight: 600;">Скачать</a></p>
+</div>
+<dl style="margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 14px 24px;">
+<dt style="font-weight: 600;">По России</dt><dd style="margin: 0;">Деловые Линии, ПЭК, Байкал-Сервис, Magictrans, СДЭК. До терминала — бесплатно</dd>
+<dt style="font-weight: 600;">По Воронежу</dt><dd style="margin: 0;">1 рабочий день, 500 ₽</dd>
+<dt style="font-weight: 600;">Самовывоз</dt><dd style="margin: 0;">Новая Усмань, 7:00–16:00, предупредите заранее</dd>
+<dt style="font-weight: 600;">Оплата</dt><dd style="margin: 0;">Картой на сайте, по QR, по счёту. Без НДС</dd>
+<dt style="font-weight: 600;">Упаковка</dt><dd style="margin: 0;">Картон и стретч, обрешётка — по желанию в ТК</dd>
+</dl>
+</div>
+</div>
+</section>
+
+<!-- 4. ПРОИЗВОДСТВО + Ozon -->
+<section id="factory" style="background: #202020; color: #E9E9E9; padding: 96px 0;">
+<div style="padding: 0 clamp(20px, 5vw, 96px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 56px; align-items: center;">
+<div>
+<h2 style="margin: 0 0 20px; font-size: clamp(30px, 3.5vw, 44px); line-height: 1.15;">Штампуем сами с 2017 года</h2>
+<p style="margin: 0 0 24px; color: #BDBDBD;">Fabbro по-итальянски — кузнец. Пять прессов, самый мощный — PYE на 250 тонн, итальянский Omera OPI-125. Поэтому весь каталог лежит на складе, а не ждёт партию.</p>
+<p style="margin: 0; color: #BDBDBD;">Нашу штамповку продают Ковкапром, ЭХК и Протект Ковка. Розницу берут на Ozon — <a href="https://www.ozon.ru/seller/fabbro/" style="color: #E9E9E9;">7 500+ отзывов</a>.</p>
+<p class="note" style="margin: 12px 0 0; color: #8A8A8A;">Названия клиентов — с их согласия.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
+<div class="ph" style="grid-column: span 2; grid-row: span 2; display: flex; align-items: center; justify-content: center; color: #5E5E5E; font-size: 14px;">видео пресса</div>
+<div class="ph" style="aspect-ratio: 1 / 1;"></div>
+<div class="ph" style="aspect-ratio: 1 / 1;"></div>
+</div>
+</div>
+</section>
+
+<!-- 5. ФОРМА + КОНТАКТЫ -->
+<section id="contacts" style="padding: 96px 0 64px;">
+<div style="padding: 0 clamp(20px, 5vw, 96px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 56px;">
+<div>
+<h2 style="margin: 0 0 20px; font-size: clamp(30px, 3.5vw, 44px); line-height: 1.15;">Пришлём счёт и посчитаем доставку</h2>
+<p style="margin: 0 0 32px; color: #5E5E5E;">Или напишите сразу в WhatsApp или Telegram.</p>
+<p style="margin: 0; line-height: 1.9;"><b>+7 [новый номер]</b><br>order@fabbro.ru<br>с. Новая Усмань, ул. Дорожная, [1А]</p>
+</div>
+<form style="display: grid; gap: 14px;">
+<input type="text" placeholder="Имя" style="font: inherit; padding: 14px 16px; border: 1px solid #BDBDBD; background: #FFFFFF;">
+<input type="tel" placeholder="Телефон" style="font: inherit; padding: 14px 16px; border: 1px solid #BDBDBD; background: #FFFFFF;">
+<textarea rows="3" placeholder="Что нужно, сколько и куда везти" style="font: inherit; padding: 14px 16px; border: 1px solid #BDBDBD; background: #FFFFFF;"></textarea>
+<label style="display: flex; gap: 12px; font-size: 14px; color: #5E5E5E; align-items: flex-start;"><input type="checkbox" style="margin-top: 4px;"> <span>Согласен на обработку персональных данных по <a href="#">политике конфиденциальности</a></span></label>
+<button type="button" style="font: inherit; font-weight: 600; padding: 16px; background: #1C1C1C; color: #E9E9E9; border: 0; cursor: pointer;">Отправить</button>
+</form>
+</div>
+</section>
+
+<footer style="background: #141414; color: #BDBDBD; padding: 24px clamp(20px, 5vw, 96px); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px;">
+<span>FABBRO · ИП [ФИО], ИНН [—], ОГРНИП [—]</span>
+<a href="#" style="color: #BDBDBD;">Политика конфиденциальности</a>
+</footer>
+
+</div>
+</body>
+</html>
