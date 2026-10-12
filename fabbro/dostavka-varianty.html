@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>FABBRO — варианты блока «Доставка и оплата»</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#FAFAF8;color:#1C1C1C;font-family:'Manrope',sans-serif;font-size:16px;line-height:1.55}
+.wrap{padding:48px clamp(16px,5vw,80px)}
+.top h1{font-size:28px;margin:0 0 8px}.top p{margin:0;color:#5E5E5E;max-width:820px}
+.var{margin-top:64px}
+.var-head{display:flex;gap:14px;align-items:baseline;padding-top:24px;border-top:2px solid #1C1C1C}
+.var-head b{font-size:28px;line-height:1}
+.var-head h2{margin:0;font-size:22px}
+.var-why{margin:6px 0 20px;color:#5E5E5E;max-width:820px}
+.block{background:#DADADA;padding:clamp(28px,4vw,56px)}
+.label{margin:0 0 16px;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#5E5E5E;font-weight:600}
+.big{margin:0;font-size:clamp(30px,3vw,42px);font-weight:800;line-height:1}
+.sub{margin:0;font-size:15px;color:#5E5E5E}
+.grid{display:grid;gap:2px;background:#BDBDBD;border:2px solid #BDBDBD}
+.tile{background:#fff;padding:24px;display:flex;flex-direction:column;gap:6px}
+.foot{margin-top:20px;display:flex;flex-wrap:wrap;gap:8px 28px;font-size:15px;color:#5E5E5E}
+a{color:#1C1C1C}
+
+/* B — путь заказа */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(190px,100%),1fr));gap:0;counter-reset:s}
+.step{position:relative;padding:0 20px 0 0}
+.step .dot{width:44px;height:44px;border-radius:50%;background:#1C1C1C;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;position:relative;z-index:1}
+.step:not(:last-child)::after{content:"";position:absolute;top:22px;left:44px;right:0;height:2px;background:#1C1C1C}
+.step h3{margin:16px 0 6px;font-size:19px}
+.step p{margin:0;font-size:15px;color:#3A3A3A}
+.step .tag{display:inline-block;margin-top:10px;background:#fff;padding:4px 10px;font-weight:700;font-size:14px}
+@media(max-width:700px){.step{padding:0 0 28px 64px}.step .dot{position:absolute;left:0;top:0}.step h3{margin-top:0}.step:not(:last-child)::after{top:44px;bottom:0;left:21px;right:auto;width:2px;height:auto}}
+
+/* C — география + способы */
+.c-wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(360px,100%),1fr));gap:40px;align-items:start}
+.tk{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0}
+.tk span{background:#fff;border:1px solid #BDBDBD;padding:10px 14px;font-weight:700;font-size:15px}
+.ways{display:grid;gap:2px;background:#BDBDBD;border:2px solid #BDBDBD}
+.way{background:#fff;padding:18px 20px;display:grid;grid-template-columns:1fr auto;gap:2px 16px;align-items:center}
+.way b{font-size:18px}.way .p{grid-row:span 2;font-size:28px;font-weight:800;text-align:right}
+.way small{color:#5E5E5E;font-size:14px}
+.pay{margin-top:24px;background:#1C1C1C;color:#E9E9E9;padding:20px 24px;display:flex;flex-wrap:wrap;gap:12px 32px;align-items:center}
+.pay b{font-size:20px}
+
+/* D — две колонки */
+.d-wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(360px,100%),1fr));gap:0}
+.d-col{padding:32px}
+.d-col.dark{background:#1C1C1C;color:#E9E9E9}
+.d-col.light{background:#fff}
+.d-col h3{margin:0 0 20px;font-size:26px}
+.row{display:grid;grid-template-columns:1fr auto;gap:16px;padding:14px 0;border-top:1px solid #393939;align-items:baseline}
+.light .row{border-color:#DADADA}
+.row span{color:#BDBDBD;font-size:15px}.light .row span{color:#5E5E5E}
+.row strong{font-size:18px;text-align:right}
+
+/* E — вопросы */
+.faq{max-width:900px}
+.faq details{background:#fff;margin-bottom:2px}
+.faq summary{list-style:none;cursor:pointer;padding:18px 22px;display:flex;justify-content:space-between;gap:16px;align-items:center;font-weight:700;font-size:18px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary em{font-style:normal;font-weight:800;white-space:nowrap}
+.faq details p{margin:0;padding:0 22px 18px;color:#3A3A3A}
+.faq details[open] summary{padding-bottom:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="top">
+<h1>FABBRO: варианты блока «Доставка и оплата»</h1>
+<p>Одни и те же факты из брифа в пяти подачах. Таблица скидок над блоком остаётся как сейчас. Вариант А — текущий, для сравнения.</p>
+</div>
+
+<!-- A -->
+<section class="var">
+<div class="var-head"><b>А</b><h2>Плитки с цифрами (сейчас)</h2></div>
+<p class="var-why">Быстро сканируется: четыре главные цифры. Минус — не видно, как проходит заказ, оговорки уходят в мелкую строку.</p>
+<div class="block">
+<p class="label">Доставка и оплата</p>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))">
+<div class="tile"><p class="big">0 ₽</p><p style="margin:0;font-weight:700">до терминала ТК</p><p class="sub">Деловые Линии, ПЭК, Байкал-Сервис, Magictrans, СДЭК</p></div>
+<div class="tile"><p class="big">500 ₽</p><p style="margin:0;font-weight:700">по Воронежу</p><p class="sub">за 1 рабочий день</p></div>
+<div class="tile"><p class="big">7:00–16:00</p><p style="margin:0;font-weight:700">самовывоз</p><p class="sub">Новая Усмань, предупредите заранее</p></div>
+<div class="tile"><p class="big">Без НДС</p><p style="margin:0;font-weight:700">оплата</p><p class="sub">картой на сайте, по QR, по счёту</p></div>
+</div>
+<div class="foot"><span>Упаковка: картон и стретч, обрешётка — по желанию в ТК</span><span>2–5 штук для себя — удобнее на Ozon</span></div>
+</div>
+</section>
+
+<!-- B -->
+<section class="var">
+<div class="var-head"><b>Б</b><h2>Путь заказа по шагам</h2></div>
+<p class="var-why">Отвечает на «а что будет после того, как я нажму “В заказ”?». Снимает тревогу у тех, кто заказывает впервые. На телефоне шаги встают вертикально.</p>
+<div class="block">
+<div class="steps">
+<div class="step"><div class="dot">1</div><h3>Заказ</h3><p>Собираете корзину на сайте или пишете в WhatsApp, Telegram.</p></div>
+<div class="step"><div class="dot">2</div><h3>Оплата</h3><p>Картой на сайте, по QR или по счёту для ИП и юрлиц.</p><span class="tag">Без НДС</span></div>
+<div class="step"><div class="dot">3</div><h3>Упаковка</h3><p>Картон и стретч, мелочь — в мешках. Обрешётку можно заказать в ТК.</p></div>
+<div class="step"><div class="dot">4</div><h3>Отгрузка</h3><p>Везём до терминала ТК в Воронеже и присылаем номер накладной.</p><span class="tag">0 ₽ до терминала</span></div>
+</div>
+<div class="foot" style="margin-top:32px;border-top:1px solid #BDBDBD;padding-top:16px">
+<span><b style="color:#1C1C1C">ТК:</b> Деловые Линии, ПЭК, Байкал-Сервис, Magictrans, СДЭК</span>
+<span><b style="color:#1C1C1C">По Воронежу:</b> 500 ₽, 1 день</span>
+<span><b style="color:#1C1C1C">Самовывоз:</b> Новая Усмань, 7:00–16:00</span>
+</div>
+</div>
+</section>
+
+<!-- C -->
+<section class="var">
+<div class="var-head"><b>В</b><h2>«Как получить» + полоса оплаты</h2></div>
+<p class="var-why">Делит на два вопроса: как забрать и как заплатить. Названия ТК стоят плашками — покупатель ищет глазами «свою» компанию. Оплата — тёмной полосой, «без НДС» не теряется.</p>
+<div class="block">
+<div class="c-wrap">
+<div>
+<p class="big" style="font-size:clamp(28px,3vw,40px)">Отправляем по всей России</p>
+<p class="sub" style="margin-top:12px;max-width:420px">До терминала транспортной компании в Воронеже довезём бесплатно. Дальше — по тарифу ТК, которую выберете вы.</p>
+<div class="tk"><span>Деловые Линии</span><span>ПЭК</span><span>Байкал-Сервис</span><span>Magictrans</span><span>СДЭК</span></div>
+</div>
+<div class="ways">
+<div class="way"><b>До терминала ТК</b><span class="p">0 ₽</span><small>по всей России, номер накладной — в мессенджер</small></div>
+<div class="way"><b>По Воронежу</b><span class="p">500 ₽</span><small>за 1 рабочий день</small></div>
+<div class="way"><b>Самовывоз</b><span class="p">0 ₽</span><small>Новая Усмань, 7:00–16:00, предупредите заранее</small></div>
+</div>
+</div>
+<div class="pay"><b>Оплата</b><span>Картой на сайте</span><span>По QR-коду</span><span>По счёту для ИП и юрлиц</span><span style="margin-left:auto;font-weight:800">Без НДС</span></div>
+</div>
+</section>
+
+<!-- D -->
+<section class="var">
+<div class="var-head"><b>Г</b><h2>Две колонки: доставка | оплата</h2></div>
+<p class="var-why">Самый компактный и «деловой»: как прайс-лист. Подходит, если хочется спокойный блок без крупных цифр. Хорошо смотрится рядом с таблицей скидок.</p>
+<div class="d-wrap">
+<div class="d-col dark">
+<h3>Доставка</h3>
+<div class="row"><span>До терминала ТК в Воронеже</span><strong>бесплатно</strong></div>
+<div class="row"><span>По Воронежу, 1 рабочий день</span><strong>500 ₽</strong></div>
+<div class="row"><span>Самовывоз из Новой Усмани</span><strong>7:00–16:00</strong></div>
+<div class="row"><span>Транспортные компании</span><strong style="font-size:15px;font-weight:600">ДЛ, ПЭК, Байкал, Magictrans, СДЭК</strong></div>
+<div class="row"><span>Упаковка</span><strong style="font-size:15px;font-weight:600">картон, стретч</strong></div>
+</div>
+<div class="d-col light">
+<h3>Оплата</h3>
+<div class="row"><span>Картой на сайте</span><strong>✓</strong></div>
+<div class="row"><span>По QR-коду</span><strong>✓</strong></div>
+<div class="row"><span>По счёту для ИП и юрлиц</span><strong>✓</strong></div>
+<div class="row"><span>НДС</span><strong>без НДС</strong></div>
+<div class="row"><span>Отсрочка</span><strong>нет</strong></div>
+</div>
+</div>
+</section>
+
+<!-- E -->
+<section class="var">
+<div class="var-head"><b>Д</b><h2>Вопрос — короткий ответ</h2></div>
+<p class="var-why">Пишем так, как спрашивают в мессенджере. Ответ-цифра видна в строке ещё до того, как раскрыть. Самый короткий по высоте, плюс удобно добавлять новые вопросы.</p>
+<div class="block">
+<div class="faq">
+<details open><summary>Сколько стоит доставка в мой город? <em>0 ₽ до ТК</em></summary><p>До терминала транспортной компании в Воронеже везём бесплатно. Дальше — по тарифу ТК: Деловые Линии, ПЭК, Байкал-Сервис, Magictrans или СДЭК.</p></details>
+<details><summary>А по Воронежу? <em>500 ₽</em></summary><p>Привезём за 1 рабочий день.</p></details>
+<details><summary>Можно забрать самому? <em>7:00–16:00</em></summary><p>Да, с производства в Новой Усмани. Предупредите заранее — соберём заказ к приезду.</p></details>
+<details><summary>Как оплатить? <em>Без НДС</em></summary><p>Картой на сайте, по QR-коду или по счёту для ИП и юрлиц. Работаем без НДС, отсрочки нет.</p></details>
+<details><summary>Не помнут в дороге? <em>Картон + стретч</em></summary><p>Упаковываем в картон и стретч, мелкие изделия — в мешки. Для дальней дороги можно заказать обрешётку в терминале ТК.</p></details>
+</div>
+</div>
+</section>
+
+</div>
+</body>
+</html>
