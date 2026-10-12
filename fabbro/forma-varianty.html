@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>FABBRO — варианты блока формы</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#FAFAF8;color:#1C1C1C;font-family:'Manrope',sans-serif;font-size:16px;line-height:1.55}
+.wrap{padding:48px clamp(16px,5vw,80px)}
+.top h1{font-size:28px;margin:0 0 8px}.top p{margin:0;color:#5E5E5E;max-width:860px}
+.var{margin-top:64px}
+.var-head{display:flex;gap:14px;align-items:baseline;padding-top:24px;border-top:2px solid #1C1C1C}
+.var-head b{font-size:28px;line-height:1}.var-head h2{margin:0;font-size:22px}
+.var-why{margin:6px 0 6px;color:#5E5E5E;max-width:860px}
+.tilda{margin:0 0 20px;font-size:14px;background:#EFEDE6;display:inline-block;padding:6px 10px}
+h3.t{margin:0 0 14px;font-size:clamp(28px,3vw,40px);line-height:1.1}
+.mute{color:#5E5E5E}.dark .mute{color:#BDBDBD}
+.light{background:#E9E9E9;padding:clamp(28px,4vw,56px)}
+.dark{background:#202020;color:#E9E9E9;padding:clamp(28px,4vw,56px)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(360px,100%),1fr));gap:48px;align-items:start}
+form{display:grid;gap:12px;margin:0}
+input,select,textarea{font:inherit;padding:14px 16px;border:1px solid #BDBDBD;background:#fff;color:#1C1C1C;width:100%}
+.dark input,.dark select,.dark textarea{background:#2C2C2C;border-color:#5E5E5E;color:#E9E9E9}
+.btn{font:inherit;font-weight:700;padding:16px 24px;border:0;background:#1C1C1C;color:#fff;cursor:pointer;text-align:center;text-decoration:none;display:inline-block}
+.dark .btn,.btn.inv{background:#E9E9E9;color:#1C1C1C}
+.btn.ghost{background:transparent;border:1px solid currentColor;color:inherit}
+.agree{display:flex;gap:10px;font-size:13px;color:#5E5E5E;align-items:flex-start}
+.dark .agree{color:#BDBDBD}.agree input{width:auto;margin-top:3px}
+.agree a{color:inherit}
+.contacts{margin-top:28px;line-height:1.9}
+.note{font-size:13px;color:#8A8A8A;font-style:italic}
+/* B */
+.msg{display:grid;gap:10px;margin-top:20px}
+.msg a{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;background:#fff;color:#1C1C1C;text-decoration:none;font-weight:700;font-size:18px;border:1px solid #BDBDBD}
+.msg a span{font-weight:500;font-size:14px;color:#5E5E5E}
+.card{background:#fff;padding:28px;border:1px solid #DADADA}
+/* C */
+.radios{display:flex;flex-wrap:wrap;gap:8px}
+.radios label{display:flex;gap:8px;align-items:center;border:1px solid #BDBDBD;background:#fff;padding:10px 14px;font-size:15px;cursor:pointer}
+.radios input{width:auto}
+.dark .radios label{background:#2C2C2C;border-color:#5E5E5E;color:#E9E9E9}
+.file{border:1px dashed #8A8A8A;background:#fff;padding:16px;font-size:15px;color:#5E5E5E;display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+.file b{color:#1C1C1C}
+/* D */
+.line{display:grid;grid-template-columns:1fr 1fr auto;gap:10px;margin-top:24px}
+@media(max-width:700px){.line{grid-template-columns:1fr}}
+/* E */
+.photo{position:relative;background:#5A5A5A;padding:clamp(28px,5vw,72px);min-height:560px;display:flex;align-items:center;justify-content:flex-end}
+.photo .bgtxt{position:absolute;left:32px;top:28px;color:#D0D0D0;font-size:14px}
+.photo .card{max-width:440px;width:100%}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="top">
+<h1>FABBRO: варианты блока формы</h1>
+<p>Главный путь покупки на сайте — корзина Tilda Store («В заказ» → оплата). Форма внизу страницы нужна тем, кто ещё не готов собирать корзину: запросить прайс, счёт с доставкой, задать вопрос. По брифу заявки разбирает владелец лично — это стоит сказать рядом с формой. Галочка согласия по 152-ФЗ — во всех вариантах.</p>
+</div>
+
+<!-- A -->
+<section class="var">
+<div class="var-head"><b>А</b><h2>Текст и контакты слева, форма справа (сейчас)</h2></div>
+<p class="var-why">Привычно и понятно. Минус — четыре поля: часть людей бросит заполнять, особенно с телефона.</p>
+<p class="tilda">Tilda: стандартная форма «текст слева, поля справа» из категории «Форма»</p>
+<div class="light">
+<div class="two">
+<div>
+<h3 class="t">Заказать элементы ковки с доставкой по России</h3>
+<p class="mute" style="margin:0">Пришлём счёт с доставкой до вашего города. Заявки разбирает владелец производства лично, без менеджеров и колл-центра.</p>
+<p class="contacts"><b>+7 [новый номер]</b><br>order@fabbro.ru<br>с. Новая Усмань, ул. Дорожная, [1А]</p>
+</div>
+<form onsubmit="return false">
+<input placeholder="Имя"><input placeholder="Телефон — для WhatsApp или Telegram"><input placeholder="Город и удобная ТК"><textarea rows="3" placeholder="Что нужно и сколько"></textarea>
+<label class="agree"><input type="checkbox"> <span>Согласен на обработку персональных данных по <a href="#">политике конфиденциальности</a></span></label>
+<button class="btn">Прислать счёт</button>
+</form>
+</div>
+</div>
+</section>
+
+<!-- B -->
+<section class="var">
+<div class="var-head"><b>Б</b><h2>Сначала мессенджеры, форма — запасной путь</h2></div>
+<p class="var-why">Кузнецы и закупщики привыкли писать в WhatsApp и Telegram, а не заполнять формы. Крупные кнопки мессенджеров слева, справа короткая форма на два поля для тех, кто хочет, чтобы написали им. Нужны новый номер и ссылки — клиент их заводит (5.1, 5.2).</p>
+<p class="tilda">Tilda: «Колонки» с кнопками-ссылками + короткая форма; или стандартный блок «Форма» с кнопками мессенджеров над полями</p>
+<div class="light">
+<div class="two">
+<div>
+<h3 class="t">Напишите — пришлём счёт с доставкой</h3>
+<p class="mute" style="margin:0">Отвечает владелец производства лично. Пришлите список позиций и город — посчитаем скидку и доставку до вашей ТК.</p>
+<div class="msg">
+<a href="#">WhatsApp <span>+7 [новый номер]</span></a>
+<a href="#">Telegram <span>@[ник]</span></a>
+<a href="#">Позвонить <span>+7 [новый номер]</span></a>
+</div>
+</div>
+<div class="card">
+<p style="margin:0 0 14px;font-weight:700;font-size:19px">Или оставьте номер — напишем сами</p>
+<form onsubmit="return false">
+<input placeholder="Имя"><input placeholder="Телефон">
+<label class="agree"><input type="checkbox"> <span>Согласен на обработку персональных данных по <a href="#">политике</a></span></label>
+<button class="btn">Жду сообщения</button>
+</form>
+<p class="mute" style="margin:16px 0 0;font-size:14px">order@fabbro.ru · Новая Усмань, ул. Дорожная, [1А]</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- C -->
+<section class="var">
+<div class="var-head"><b>В</b><h2>Запрос оптового прайса и счёта</h2></div>
+<p class="var-why">Форма под главную аудиторию: кто вы (кузница / магазин / для себя) — выбор в одно касание, а не текстом. Можно приложить список позиций файлом. Владелец сразу видит, кому и что отвечать; частников вежливо ведём на Ozon в подсказке.</p>
+<p class="tilda">Tilda: стандартная форма с полями «варианты выбора» и «загрузка файла»</p>
+<div class="dark">
+<div class="two">
+<div>
+<h3 class="t">Оптовый прайс и счёт с доставкой</h3>
+<p class="mute" style="margin:0 0 20px">Пришлём прайс в Excel, фото на белом фоне и посчитаем доставку до вашей ТК. Скидка от 50 000 ₽ — до 15 %.</p>
+<p class="mute" style="margin:0;font-size:14px">2–5 штук для себя удобнее взять <a href="#" style="color:#E9E9E9">на Ozon</a>.</p>
+</div>
+<form onsubmit="return false">
+<div class="radios">
+<label><input type="radio" name="who"> Кузница / цех</label>
+<label><input type="radio" name="who"> Магазин ковки</label>
+<label><input type="radio" name="who"> Для себя</label>
+</div>
+<input placeholder="Имя"><input placeholder="Телефон или Telegram"><input placeholder="Город">
+<div class="file"><span><b>Список позиций</b> — Excel, фото или скриншот, если есть</span><span class="btn ghost" style="padding:8px 14px;font-size:14px">Прикрепить</span></div>
+<label class="agree"><input type="checkbox"> <span>Согласен на обработку персональных данных по <a href="#">политике конфиденциальности</a></span></label>
+<button class="btn">Получить прайс и счёт</button>
+</form>
+</div>
+</div>
+</section>
+
+<!-- D -->
+<section class="var">
+<div class="var-head"><b>Г</b><h2>Одна строка на всю ширину</h2></div>
+<p class="var-why">Самый короткий по высоте: заголовок и форма в одну строку. Для одностраничника, где главное уже сделала корзина. Минус — мало места, чтобы объяснить, что будет после отправки.</p>
+<p class="tilda">Tilda: стандартная «форма в одну строку» (горизонтальная форма) на тёмном фоне</p>
+<div class="dark">
+<h3 class="t" style="margin:0">Пришлём счёт с доставкой до вашего города</h3>
+<p class="mute" style="margin:8px 0 0">Отвечает владелец лично. Или сразу в <a href="#" style="color:#E9E9E9">WhatsApp</a> · <a href="#" style="color:#E9E9E9">Telegram</a></p>
+<form class="line" onsubmit="return false">
+<input placeholder="Имя"><input placeholder="Телефон"><button class="btn" style="white-space:nowrap">Прислать счёт</button>
+</form>
+<label class="agree" style="margin-top:12px"><input type="checkbox"> <span>Согласен на обработку персональных данных по <a href="#">политике конфиденциальности</a></span></label>
+</div>
+</section>
+
+<!-- E -->
+<section class="var">
+<div class="var-head"><b>Д</b><h2>Форма на фоне склада</h2></div>
+<p class="var-why">Форма лежит белой карточкой на фото стеллажей с готовой филёнкой. Фото работает как довод «всё на складе» прямо в момент заявки. Нужна одна хорошая широкая фотография склада.</p>
+<p class="tilda">Tilda: стандартная форма с фоновым изображением</p>
+<div class="photo">
+<span class="bgtxt">фото: стеллажи склада с готовой филёнкой</span>
+<div class="card">
+<p style="margin:0 0 6px;font-weight:800;font-size:26px;line-height:1.15">Всё это уже на складе</p>
+<p class="mute" style="margin:0 0 18px">Оставьте номер — пришлём счёт с доставкой до вашего города.</p>
+<form onsubmit="return false">
+<input placeholder="Имя"><input placeholder="Телефон — для WhatsApp или Telegram"><input placeholder="Город">
+<label class="agree"><input type="checkbox"> <span>Согласен на обработку персональных данных по <a href="#">политике</a></span></label>
+<button class="btn">Прислать счёт</button>
+</form>
+</div>
+</div>
+</section>
+
+</div>
+</body>
+</html>
